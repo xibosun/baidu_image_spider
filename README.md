@@ -1,10 +1,10 @@
 ## Baidu Image Spider
 
-[![Build Status](https://xibosun.github.io/douban_spider/docs/build_status.svg)](https://xibosun.github.io/baidu_spider)
-[![issues](https://xibosun.github.io/douban_spider/docs/issues.svg)](https://xibosun.github.io/baidu_spider/issues)
-[![Stars](https://xibosun.github.io/douban_spider/docs/stars.svg)](https://xibosun.github.io/baidu_spider/stargazers)
+[![Build Status](https://xibosun.github.io/douban_spider/docs/build_status.svg)](https://github.com/xibosun/baidu_spider)
+[![issues](https://xibosun.github.io/douban_spider/docs/issues.svg)](https://github.com/xibosun/baidu_spider/issues)
+[![Stars](https://xibosun.github.io/douban_spider/docs/stars.svg)](https://github.com/xibosun/baidu_spider/stargazers)
 [![Dependencies](https://xibosun.github.io/douban_spider/docs/dependencies.svg)](https://www.python.org/downloads/release/python-363/)
-[![Release](https://xibosun.github.io/douban_spider/docs/release.svg)](https://xibosun.github.io/baidu_spider)
+[![Release](https://xibosun.github.io/douban_spider/docs/release.svg)](https://github.com/xibosun/baidu_spider)
 [![License](https://xibosun.github.io/douban_spider/docs/license.svg)](https://opensource.org/licenses/mit-license.php)
 [![](https://xibosun.github.io/douban_spider/docs/chinese.svg)](README-zh.md)
 
