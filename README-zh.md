@@ -6,7 +6,7 @@
 [![Dependencies](https://xibosun.github.io/douban_spider/docs/dependencies.svg)](https://www.python.org/downloads/release/python-363/)
 [![Release](https://xibosun.github.io/douban_spider/docs/release.svg)](https://github.com/xibosun/baidu_spider)
 [![License](https://xibosun.github.io/douban_spider/docs/license.svg)](https://opensource.org/licenses/mit-license.php)
-[![](https://xibosun.github.io/douban_spider/docs/chinese.svg)](README-zh.md)
+[![](https://xibosun.github.io/douban_spider/docs/english.svg)](README.md)
 
 ### 介绍
 
