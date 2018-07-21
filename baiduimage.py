@@ -175,8 +175,8 @@ class search:
         except:
             return []
 
-keyword=input("input keyword：")
-count=int(input("number of pics："))
+keyword=input("input keyword: ")
+count=int(input("number of pics: "))
 ins=search()
 ins.searchpic(keyword,count)
 print(ins.searchurl(keyword,count))
