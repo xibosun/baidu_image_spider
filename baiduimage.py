@@ -161,8 +161,8 @@ class BaiduImagesDownloader(object):
 
     def main(self):
         imgnum = 1
-        # Every page
-        while True:
+        img_urls = []
+        while True: # Every page
             # Get page json
             page_json = self.get_page_json()
             list_num = page_json['listNum']
@@ -171,20 +171,22 @@ class BaiduImagesDownloader(object):
             for img_obj in page_json['data']:
                 img_url = self.get_image_url(list_num, img_obj)
 
-                if self.is_saveurls: # Save to files
-                    with open(os.path.join(self.path, f'{self.keyword}-{self.number}.txt'), 'a') as f:
-                        f.write(f'{imgnum}: {img_url}\n')
+                print(f'\rGeting image {imgnum}...', end='')
+                if self.is_saveurls: 
+                    img_urls.append(img_url) # Store the url of image
                 else: # Save images
-                    print(f'\rdownloading image {imgnum}...', end='')
                     try:
                         urlretrieve(img_url, os.path.join(self.path, f'{imgnum}.jpg'))
                     except HTTPError as e:
                         continue
                 # Next image
-                print(f'\rdownload {imgnum} images success', end='')
+                print(f'\rGet {imgnum} images success', end='')
                 imgnum += 1
                 if imgnum > self.number: # finished
                     print('')
+                    if self.is_saveurls: # save urls to file
+                        with open(os.path.join(self.path, f'{self.keyword}-{self.number}.json'), 'w') as f:
+                            f.write(json.dumps(img_urls, ensure_ascii=False))
                     return
                 time.sleep(1.5)
         self.page += 1
